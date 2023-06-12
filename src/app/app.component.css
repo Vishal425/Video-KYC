@@ -1,0 +1,99 @@
+.maindiv{
+  height: 100%;
+  margin: 0;
+  background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #6c757d 0%, rgba(0,212,255,1) 96%);
+
+}
+
+.myForm{
+ background-color: rgba(0,0,0,0.5) !important;
+ padding: 15px !important;
+border-radius: 15px !important;
+color: white;
+
+}
+
+input{
+ border-radius:0 5px 5px 0 !important;
+
+}
+input:focus{
+   outline: none;
+box-shadow:none !important;
+border:1px solid #ccc !important;
+
+}
+.mt-3{
+   padding: 8px 0; 
+}
+
+.br-15{
+ border-radius: 5px 0 0 5px !important;
+}
+
+#add_more{
+ color: white !important;
+ background-color: #fa8231 !important;
+ border-radius: 15px !important;
+ border: 0 !important;
+
+}
+#remove_more{
+ color: white !important;
+ background-color: #fc5c65 !important;
+ border-radius: 15px !important;
+ border: 0 !important;
+ display: none;
+
+}
+ 
+.submit_btn{
+border-radius: 5px !important;
+background-color: #95c714 !important;
+border: 0 !important;
+text-align: center;
+display: block;
+margin: auto;
+padding: 11px 40px;
+font-size: 18px;
+}
+
+
+.thead-dark{
+   background: #1E88E5;
+}
+.table th td{
+   text-align: center;
+}
+.v_table{ border:1px solid #d3d3d3;}
+.v_table th{
+   color: #fff;
+}
+.kyc_table th{ color: #000;}
+.heading_text{color: #1E88E5; margin-bottom:20px; }
+.heading_text h2{  padding-top:10%;  font-size:32px;  font-weight: 600; }
+.video_kyc{
+   padding: 50px 0;
+   background: #eef7fd;
+}
+.profile_img{
+   padding:40px;
+}
+.profile_img img{
+   border:6px solid #1E88E5;
+   border-radius: 5px;
+   width: 170px;
+}
+.main_kyc_table{
+   background: #fff;
+   box-shadow: 1px 2px 10px 3px #c3c3c3;
+   border-radius: 5px;
+   padding: 26px;
+}
+
+.td_center{
+   text-align: center;
+}
+
+.verify_img{ width: 30px;}

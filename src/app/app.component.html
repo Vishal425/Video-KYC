@@ -1,0 +1,255 @@
+ <!-- <img src="{{ajit}}" width="100px" height="100px" />  -->
+<!-- <div class="container" *ngIf="contact">
+      <h2>Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="pan_number">PAN</label>
+            <input type="text" class="form-control" [(ngModel)]="pan"  placeholder="" id="pan_number">
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+              <label for="adhar_number">ADHAR</label>
+              <input type="text" class="form-control" [(ngModel)]="adhar" placeholder="" id="adhar_number">
+            </div>
+    
+    
+          </div>
+          </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">NAME</label>
+                  <input type="text" class="form-control"  [(ngModel)]="name" placeholder="" id="name">
+                </div>
+              </div>
+      
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="birthdate">DOB</label>
+                      <input type="date" class="form-control"  [(ngModel)]="dob" placeholder="" id="birthdate">
+                    </div>
+                  </div>
+                  </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="age">AGE</label>
+                <input type="number" class="form-control"  [(ngModel)]="age" placeholder="" id="age">
+              </div>
+              </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                  <label for="gender">GENDER</label>
+                  <input type="text" class="form-control"  [(ngModel)]="gender" placeholder="" id="gender">
+                </div>
+              </div>
+              </div>
+          
+<div class="mt-3">
+    <button type="submit" (click)="submitinfo()" class="btn btn-primary">Submit</button>
+
+
+</div>
+  
+</div> -->
+  
+
+
+<div class="maindiv" *ngIf="contact">
+	<div class="container h-100">
+	<div class="d-flex justify-content-center">
+		<div class="card mt-5 col-md-10 animated bounceInDown myForm">
+			<div class="card-header">
+				<h4>Customer Details</h4>
+			</div>
+			<div class="card-body">
+				<!-- <form> -->
+					<div id="dynamic_container">
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text br-15"><i class="fa fa-address-card"></i></span>
+							</div>
+							<input type="text" placeholder="pan" [(ngModel)]="pan" class="form-control"/>
+						</div>
+						<div class="input-group mt-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text br-15"><i class="fa fa-address-card"></i>
+                  </span>
+							</div>
+							<input type="text" placeholder="adhar" [(ngModel)]="adhar" class="form-control"/>
+						</div>
+						<div class="input-group mt-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text br-15"><i class="fa fa-user"></i></span>
+							</div>
+							<input type="text" placeholder="name" [(ngModel)]="name" class="form-control"/>
+                        </div>
+                        <div class="input-group mt-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text br-15"><i class="fa fa-birthday-cake" aria-hidden="true"></i>
+                </span>
+							</div>
+							<input type="date" placeholder="dob" [(ngModel)]="dob" class="form-control"/>
+                        </div>
+                        <div class="input-group mt-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text br-15"><i class="fa fa-calendar"></i></span>
+							</div>
+							<input type="text" placeholder="age" [(ngModel)]="age" class="form-control"/>
+                        </div>
+                        <div class="input-group mt-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text br-15"><img src="./../assets/gender.svg" width="20px;"></span>
+							</div>
+							<input type="text" placeholder="gender" [(ngModel)]="gender" class="form-control"/>
+                        </div>
+                        
+					</div>
+				<!-- </form> -->
+			</div>
+			<div class="card-footer">
+			
+				<button class="btn btn-success btn-sm  submit_btn" (click)="submitinfo()"><i  class="fas fa-arrow-alt-circle-right"></i> Submit</button>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+
+
+    <!-- <div class="container" *ngIf="displayform"> 
+    <button (click)="goBack()">Go Back</button>  -->
+    
+      <!-- <h1> Display Data </h1>  
+    <img src="{{img}}" width="150px" height="150px"/>
+
+    <table class="table table-striped">  
+        <thead>  
+            <tr>  
+              <th>adharname</th>  
+              <th>adhardob</th>  
+              <th>adhargender</th>  
+              <th>inputname</th>
+              <th>inputage</th> 
+              <th>detectedage</th>
+              <th>detectedgender</th>
+              <th>namematchpercent</th>
+              <th>face_verified</th>
+  
+            </tr>  
+        </thead>  
+        <tbody>  
+          <tr>  
+            <td>{{ students.adharname}}</td>  
+            <td>{{ students.adhardob }}</td>  
+            <td>{{ students.adhargender }}</td>  
+            <td>{{ students.inputname }}</td>
+            <td>{{ students.inputage }}</td>
+            <td>{{ students.detectedage }}</td>
+            <td>{{ students.detectedgender }}</td>
+            <td>{{ students.namematchpercent }}</td>
+            <td>{{ students.face_verified }}</td>     
+          </tr>  
+        </tbody>  
+      </table>  
+    </div>   -->
+
+    <body>
+      <div class="video_kyc"> 
+      <div class="container" *ngIf="displayform">
+        <button (click)="goBack()">Go Back</button>
+           
+          <div class="profile_photo">
+          <div class="row">   
+                  <div class="col-md-3">
+                      <div class="profile_img">
+                          <img src="{{img}}">
+                      </div>
+                  </div>
+                  <div class="col-md-5">
+                      <div class="heading_text">
+                          <h2> Video KYC</h2>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="profile_img">
+                      <img src="{{videoimg}}">
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+     
+          <div class="container" *ngIf="displayform">
+              <div class="main_kyc_table">
+              <table class="table v_table">
+                  <thead class="thead-dark">
+                      <tr>
+                      <th scope="col">Parameter</th>
+                      <th class="td_center" scope="col">Input data</th>
+                      <th class="td_center" scope="col">Deteted Data</th>
+                      <th class="td_center" scope="col">Verified / Not Verified</th>
+                      <th class="td_center" scope="col">Score</th>
+                      
+                      </tr>
+                  </thead>
+                  <tbody class="kyc_table">
+                          <tr>
+                          <th scope="row">Name</th>
+                          <td class="td_center">{{ students.inputname }}</td>
+                          <td class="td_center">{{ students.adharname}}</td>
+                          <td class="td_center"><img class="verify_img"  [src]="students.namematchpercent > '50.0' ? './../assets/images/yes_icon.png' : './../assets/images/cancel_icon.png'">
+                            <!-- <img class="verify_img" *ngIf="(students.namematchpercent < 50.0" src="./../assets/images/cancel_icon.png"> -->
+                          </td>
+                          <td class="td_center">{{ students.namematchpercent }}</td>
+                          </tr>
+                          <tr>
+                          <th scope="row">Age</th>
+                          <td class="td_center">{{ students.inputage }}</td>
+                          <td class="td_center">{{ students.detectedage }}</td>
+                          <td class="td_center"><img class="verify_img"  [src]="students.agematchpercent > '60.0' ? './../assets/images/yes_icon.png' : './../assets/images/cancel_icon.png'"></td>
+                          <!-- <td class="td_center"><img class="verify_img" src="./../assets/images/yes_icon.png"></td> -->
+                          <td class="td_center">{{ students.agematchpercent }}</td>
+                          </tr>
+                          <tr>
+                          <th scope="row">Gender</th>
+                          <td class="td_center">{{ students.inputgender }}</td>
+                          <td class="td_center">{{ students.detectedgender }}</td>
+                          <td class="td_center"> </td>
+                          <td class="td_center"> </td>
+                          </tr>
+                          <tr>
+                          <th scope="row">Aadhar</th>
+                          <td class="td_center">{{ students.adhar }}</td>
+                          <td class="td_center"> </td>
+                          <td class="td_center"> </td>
+                          <td class="td_center"> </td>
+                      </tr>  
+                      <tr>
+                          <th scope="row">Pan</th>
+                          <td class="td_center">{{ students.pan }}</td>
+                          <td class="td_center"> </td>
+                          <td class="td_center"> </td>
+                          <td class="td_center"> </td> 
+                        </tr>
+                      <tr>
+                          <th scope="row">Aadhar Image</th>
+                          <td class="td_center"> </td>
+                          <td class="td_center">{{ students.face_verified }}</td>
+                          <td class="td_center"><img class="verify_img"  [src]="students.face_match_percent > '60.0' ? './../assets/images/yes_icon.png' : './../assets/images/cancel_icon.png'"></td>
+                          <td class="td_center">{{ students.face_match_percent }} </td>
+                      </tr>
+                  </tbody>
+              </table>                   
+          </div>
+      </div>
+      </div>     
+                  
+        
+  </body>   
+<app-spinner [showProgress]="showMask"></app-spinner>

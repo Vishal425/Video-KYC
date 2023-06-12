@@ -1,0 +1,15 @@
+
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            <mat-label>Enter Otp:</mat-label>
+            <input type="otp"  [(ngModel)]="otp" id="otp" name="otp" minlength="6">
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button class="btn btn-primary" (click)="onNoClick()">Close</button>&nbsp;
+            <button type="button" (click)="submitotp()" cdkFocusInitial class="btn btn-danger" data-dismiss="modal">Submit</button>
+          </div>
+
+<app-spinner [showProgress]="showMask"></app-spinner>
